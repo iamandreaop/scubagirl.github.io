@@ -16,6 +16,14 @@ function localUrl(publicId) {
     : `${IMAGES_PATH}/${publicId}.${IMAGES_EXT}`;
 }
 
+/* Sync sticky filter offset to actual header height */
+function syncHeaderOffset() {
+  const h = document.querySelector('.site-header').offsetHeight;
+  document.documentElement.style.setProperty('--header-h', h + 'px');
+}
+syncHeaderOffset();
+window.addEventListener('resize', syncHeaderOffset);
+
 /* Inject images into gallery items */
 document.querySelectorAll('.gallery-item[data-cld-id]').forEach(item => {
   const img = document.createElement('img');
