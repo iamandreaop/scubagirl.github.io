@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scubagirl — Underwater Photography</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="scubagirl-favicon.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" onclick="filterGallery('all'); return false;"><img src="scubagirl-logo.png" alt="scubagirl" class="logo-img"></a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <img src="images/destinations/dumaguete/harlequin-shrimp.jpg" alt="" class="hero-img">
+  </section>
+
+  <!-- Category Filter -->
+  <section class="filter-section">
+    <div class="filter-inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="destinations" id="destBtn">Destinations <span class="filter-chevron">›</span></button>
+      <button class="filter-btn" data-filter="fish">Fish</button>
+      <button class="filter-btn" data-filter="invertebrates">Invertebrates</button>
+      <button class="filter-btn" data-filter="nudibranchs">Nudibranchs</button>
+      <button class="filter-btn" data-filter="octopuses">Octopuses</button>
+      <button class="filter-btn" data-filter="seascapes">Seascapes</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+    <div class="filter-dropdown" id="destDropdown">
+      <button class="filter-sub-btn active" data-sublocation="">All Destinations</button>
+      <button class="filter-sub-btn" data-sublocation="Anilao">Anilao</button>
+      <button class="filter-sub-btn" data-sublocation="Raja Ampat">Raja Ampat</button>
+      <button class="filter-sub-btn" data-sublocation="Dumaguete">Dumaguete</button>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <main class="gallery" id="gallery">
+
+    <!-- Dumaguete -->
+    <div class="gallery-item" data-category="destinations" data-title="Dumaguete" data-location="Dumaguete, Philippines" data-cld-id="destinations/dumaguete/dumaguete-1.jpg">
+      <div class="item-img" style="--g: linear-gradient(135deg, #0a2a4a 0%, #1a6b8a 40%, #2dd4bf 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Dumaguete</span><span class="item-loc">Dumaguete, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Dumaguete" data-location="Dumaguete, Philippines" data-cld-id="destinations/dumaguete/dumaguete-2.jpg">
+      <div class="item-img" style="--g: linear-gradient(145deg, #0c1445 0%, #1d4ed8 50%, #0ea5e9 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Dumaguete</span><span class="item-loc">Dumaguete, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Harlequin Shrimp" data-location="Dumaguete, Philippines" data-cld-id="destinations/dumaguete/harlequin-shrimp.jpg">
+      <div class="item-img" style="--g: linear-gradient(140deg, #1a0f00 0%, #78350f 40%, #d97706 80%, #fbbf24 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Harlequin Shrimp</span><span class="item-loc">Dumaguete, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Ambon Scorpionfish" data-location="Dumaguete, Philippines" data-cld-id="destinations/dumaguete/ambon-scorpionfish.jpg">
+      <div class="item-img" style="--g: linear-gradient(140deg, #1a0a0a 0%, #7f1d1d 40%, #dc2626 80%, #fca5a5 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Ambon Scorpionfish</span><span class="item-loc">Dumaguete, Philippines</span></div>
+    </div>
+
+    <!-- Anilao -->
+    <div class="gallery-item" data-category="destinations" data-title="Nudibranch" data-location="Anilao, Philippines" data-cld-id="destinations/anilao/nudibranch.jpeg">
+      <div class="item-img" style="--g: linear-gradient(135deg, #1a0533 0%, #9333ea 40%, #e879f9 80%, #f0abfc 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Nudibranch</span><span class="item-loc">Anilao, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Eels" data-location="Anilao, Philippines" data-cld-id="destinations/anilao/eels.jpeg">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0c1a1a 0%, #0f4c5c 50%, #0891b2 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Eels</span><span class="item-loc">Anilao, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Shrimp" data-location="Anilao, Philippines" data-cld-id="destinations/anilao/shrimp.jpeg">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0f1a0f 0%, #14532d 40%, #4ade80 80%, #86efac 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Shrimp</span><span class="item-loc">Anilao, Philippines</span></div>
+    </div>
+
+    <!-- Destinations -->
+    <div class="gallery-item" data-category="destinations" data-title="Coral Triangle" data-location="Raja Ampat, Indonesia" data-cld-id="destinations/coral-triangle">
+      <div class="item-img" style="--g: linear-gradient(135deg, #0a2a4a 0%, #1a6b8a 40%, #2dd4bf 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Coral Triangle</span><span class="item-loc">Raja Ampat, Indonesia</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="destinations" data-title="Blue Hole" data-location="Dahab, Egypt" data-cld-id="destinations/blue-hole">
+      <div class="item-img" style="--g: linear-gradient(160deg, #030c1a 0%, #0d3b6e 50%, #1e6fa8 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Blue Hole</span><span class="item-loc">Dahab, Egypt</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="destinations" data-title="Manta Point" data-location="Nusa Penida, Bali" data-cld-id="destinations/manta-point">
+      <div class="item-img" style="--g: linear-gradient(120deg, #0f3460 0%, #16a0bc 60%, #0e7490 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Manta Point</span><span class="item-loc">Nusa Penida, Bali</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Great Barrier Reef" data-location="Queensland, Australia" data-cld-id="destinations/great-barrier-reef">
+      <div class="item-img" style="--g: linear-gradient(145deg, #064e3b 0%, #0f766e 40%, #22d3ee 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Great Barrier Reef</span><span class="item-loc">Queensland, Australia</span></div>
+    </div>
+    <div class="gallery-item" data-category="destinations" data-title="Cocos Island" data-location="Costa Rica" data-cld-id="destinations/cocos-island">
+      <div class="item-img" style="--g: linear-gradient(155deg, #0c1445 0%, #1d4ed8 50%, #0ea5e9 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Cocos Island</span><span class="item-loc">Costa Rica</span></div>
+    </div>
+
+    <!-- Fish -->
+    <div class="gallery-item" data-category="fish" data-title="Lionfish" data-location="Red Sea" data-cld-id="fish/lionfish">
+      <div class="item-img" style="--g: linear-gradient(135deg, #1a1a2e 0%, #8b1a1a 40%, #d97706 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Lionfish</span><span class="item-loc">Red Sea</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="fish" data-title="Whale Shark" data-location="Djibouti" data-cld-id="fish/whale-shark">
+      <div class="item-img" style="--g: linear-gradient(120deg, #0f172a 0%, #1e3a5f 40%, #60a5fa 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Whale Shark</span><span class="item-loc">Djibouti</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="fish" data-title="Clownfish" data-location="Papua New Guinea" data-cld-id="fish/clownfish">
+      <div class="item-img" style="--g: linear-gradient(160deg, #0f172a 0%, #0d4b5e 30%, #f97316 80%, #fb923c 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Clownfish</span><span class="item-loc">Papua New Guinea</span></div>
+    </div>
+    <div class="gallery-item" data-category="fish" data-title="Manta Ray" data-location="Maldives" data-cld-id="fish/manta-ray">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0a0a0f 0%, #1e293b 50%, #334155 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Manta Ray</span><span class="item-loc">Maldives</span></div>
+    </div>
+    <div class="gallery-item" data-category="fish" data-title="Mandarin Fish" data-location="Lembeh, Indonesia" data-cld-id="fish/mandarin-fish">
+      <div class="item-img" style="--g: linear-gradient(135deg, #1e1b4b 0%, #4338ca 40%, #0ea5e9 70%, #22d3ee 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Mandarin Fish</span><span class="item-loc">Lembeh, Indonesia</span></div>
+    </div>
+    <div class="gallery-item" data-category="fish" data-title="Hammerhead Shark" data-location="Galápagos Islands" data-cld-id="fish/hammerhead-shark">
+      <div class="item-img" style="--g: linear-gradient(150deg, #020617 0%, #0c2340 50%, #1e40af 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Hammerhead Shark</span><span class="item-loc">Galápagos Islands</span></div>
+    </div>
+
+    <!-- Invertebrates -->
+    <div class="gallery-item" data-category="invertebrates" data-title="Feather Star" data-location="Sulawesi, Indonesia" data-cld-id="invertebrates/feather-star">
+      <div class="item-img" style="--g: linear-gradient(135deg, #1e1b4b 0%, #6d28d9 50%, #a855f7 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Feather Star</span><span class="item-loc">Sulawesi, Indonesia</span></div>
+    </div>
+    <div class="gallery-item" data-category="invertebrates" data-title="Mantis Shrimp" data-location="Philippines" data-cld-id="invertebrates/mantis-shrimp">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0f1a0f 0%, #14532d 40%, #4ade80 80%, #86efac 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Mantis Shrimp</span><span class="item-loc">Philippines</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="invertebrates" data-title="Sea Fan Garden" data-location="Komodo, Indonesia" data-cld-id="invertebrates/sea-fan-garden">
+      <div class="item-img" style="--g: linear-gradient(120deg, #1a0533 0%, #7e22ce 40%, #db2777 80%, #f472b6 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Sea Fan Garden</span><span class="item-loc">Komodo, Indonesia</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="invertebrates" data-title="Basket Star" data-location="British Columbia" data-cld-id="invertebrates/basket-star">
+      <div class="item-img" style="--g: linear-gradient(160deg, #0f172a 0%, #1e3a5f 40%, #7c3aed 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Basket Star</span><span class="item-loc">British Columbia</span></div>
+    </div>
+    <div class="gallery-item" data-category="invertebrates" data-title="Cuttlefish" data-location="Lembeh Strait" data-cld-id="invertebrates/cuttlefish">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0c1a1a 0%, #0f4c5c 50%, #0891b2 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Cuttlefish</span><span class="item-loc">Lembeh Strait</span></div>
+    </div>
+
+    <!-- Nudibranchs -->
+    <div class="gallery-item" data-category="nudibranchs" data-title="Chromodoris" data-location="Anilao, Philippines" data-cld-id="nudibranchs/chromodoris">
+      <div class="item-img" style="--g: linear-gradient(135deg, #1a0533 0%, #9333ea 40%, #e879f9 80%, #f0abfc 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Chromodoris</span><span class="item-loc">Anilao, Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="nudibranchs" data-title="Flabellina" data-location="Norway" data-cld-id="nudibranchs/flabellina">
+      <div class="item-img" style="--g: linear-gradient(145deg, #0f0a2e 0%, #7c3aed 30%, #e879f9 60%, #fca5a5 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Flabellina</span><span class="item-loc">Norway</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="nudibranchs" data-title="Spanish Dancer" data-location="Red Sea" data-cld-id="nudibranchs/spanish-dancer">
+      <div class="item-img" style="--g: linear-gradient(120deg, #1f0a0a 0%, #be123c 40%, #f43f5e 70%, #fda4af 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Spanish Dancer</span><span class="item-loc">Red Sea</span></div>
+    </div>
+    <div class="gallery-item" data-category="nudibranchs" data-title="Jorunna" data-location="Japan" data-cld-id="nudibranchs/jorunna">
+      <div class="item-img" style="--g: linear-gradient(140deg, #0f1a0a 0%, #166534 40%, #4ade80 70%, #d9f99d 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Jorunna</span><span class="item-loc">Japan</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="nudibranchs" data-title="Phyllidia" data-location="Bali" data-cld-id="nudibranchs/phyllidia">
+      <div class="item-img" style="--g: linear-gradient(155deg, #1c1917 0%, #292524 40%, #f5f5f4 70%, #fbbf24 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Phyllidia</span><span class="item-loc">Bali</span></div>
+    </div>
+    <div class="gallery-item" data-category="nudibranchs" data-title="Glaucus Atlanticus" data-location="South Africa" data-cld-id="nudibranchs/glaucus-atlanticus">
+      <div class="item-img" style="--g: linear-gradient(130deg, #eff6ff 0%, #93c5fd 30%, #3b82f6 60%, #1d4ed8 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Glaucus Atlanticus</span><span class="item-loc">South Africa</span></div>
+    </div>
+
+    <!-- Octopuses -->
+    <div class="gallery-item" data-category="octopuses" data-title="Blue-Ringed Octopus" data-location="Lembeh, Indonesia" data-cld-id="octopuses/blue-ringed-octopus">
+      <div class="item-img" style="--g: linear-gradient(135deg, #0a1628 0%, #1e3a5f 40%, #0ea5e9 70%, #7dd3fc 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Blue-Ringed Octopus</span><span class="item-loc">Lembeh, Indonesia</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="octopuses" data-title="Mimic Octopus" data-location="Sulawesi" data-cld-id="octopuses/mimic-octopus">
+      <div class="item-img" style="--g: linear-gradient(120deg, #1c1917 0%, #44403c 40%, #78716c 70%, #d6d3d1 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Mimic Octopus</span><span class="item-loc">Sulawesi</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="octopuses" data-title="Day Octopus" data-location="Great Barrier Reef" data-cld-id="octopuses/day-octopus">
+      <div class="item-img" style="--g: linear-gradient(160deg, #0c1a0c 0%, #14532d 40%, #166534 70%, #4ade80 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Day Octopus</span><span class="item-loc">Great Barrier Reef</span></div>
+    </div>
+    <div class="gallery-item" data-category="octopuses" data-title="Coconut Octopus" data-location="Philippines" data-cld-id="octopuses/coconut-octopus">
+      <div class="item-img" style="--g: linear-gradient(140deg, #1a0f00 0%, #78350f 40%, #d97706 80%, #fbbf24 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Coconut Octopus</span><span class="item-loc">Philippines</span></div>
+    </div>
+    <div class="gallery-item" data-category="octopuses" data-title="Giant Pacific Octopus" data-location="Puget Sound" data-cld-id="octopuses/giant-pacific-octopus">
+      <div class="item-img" style="--g: linear-gradient(140deg, #1a0a0a 0%, #7f1d1d 40%, #dc2626 80%, #fca5a5 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Giant Pacific Octopus</span><span class="item-loc">Puget Sound</span></div>
+    </div>
+
+    <!-- Seascapes -->
+    <div class="gallery-item wide" data-category="seascapes" data-title="Kelp Forest" data-location="Monterey Bay" data-cld-id="seascapes/kelp-forest">
+      <div class="item-img" style="--g: linear-gradient(120deg, #021a0a 0%, #14532d 30%, #15803d 60%, #4ade80 90%, #bbf7d0 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Kelp Forest</span><span class="item-loc">Monterey Bay</span></div>
+    </div>
+    <div class="gallery-item" data-category="seascapes" data-title="Drift Dive" data-location="Tubbataha Reef" data-cld-id="seascapes/drift-dive">
+      <div class="item-img" style="--g: linear-gradient(135deg, #020617 0%, #0c1445 40%, #1e3a8a 80%, #3b82f6 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Drift Dive</span><span class="item-loc">Tubbataha Reef</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="seascapes" data-title="The Wall" data-location="Grand Cayman" data-cld-id="seascapes/the-wall">
+      <div class="item-img" style="--g: linear-gradient(160deg, #020617 0%, #030b1a 30%, #0a2a4a 60%, #0e4c73 100%)"></div>
+      <div class="item-overlay"><span class="item-title">The Wall</span><span class="item-loc">Grand Cayman</span></div>
+    </div>
+    <div class="gallery-item" data-category="seascapes" data-title="Sunbeams" data-location="Sipadan, Malaysia" data-cld-id="seascapes/sunbeams">
+      <div class="item-img" style="--g: linear-gradient(145deg, #0c1a2e 0%, #0e4c73 40%, #38bdf8 80%, #e0f2fe 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Sunbeams</span><span class="item-loc">Sipadan, Malaysia</span></div>
+    </div>
+    <div class="gallery-item" data-category="seascapes" data-title="Coral Meadow" data-location="Maldives" data-cld-id="seascapes/coral-meadow">
+      <div class="item-img" style="--g: linear-gradient(130deg, #0f2830 0%, #0c4a6e 40%, #0891b2 70%, #22d3ee 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Coral Meadow</span><span class="item-loc">Maldives</span></div>
+    </div>
+
+    <!-- Abstract -->
+    <div class="gallery-item" data-category="abstract" data-title="Bubble Veil" data-location="Truk Lagoon" data-cld-id="abstract/bubble-veil">
+      <div class="item-img" style="--g: radial-gradient(ellipse at 30% 70%, #7dd3fc 0%, #0ea5e9 30%, #0369a1 60%, #0a2a4a 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Bubble Veil</span><span class="item-loc">Truk Lagoon</span></div>
+    </div>
+    <div class="gallery-item wide" data-category="abstract" data-title="Refraction" data-location="Caribbean" data-cld-id="abstract/refraction">
+      <div class="item-img" style="--g: linear-gradient(110deg, #0a2a4a 0%, #0e7490 25%, #06b6d4 50%, #a5f3fc 75%, #e0f2fe 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Refraction</span><span class="item-loc">Caribbean</span></div>
+    </div>
+    <div class="gallery-item tall" data-category="abstract" data-title="Anemone Close-Up" data-location="Fiji" data-cld-id="abstract/anemone-close-up">
+      <div class="item-img" style="--g: radial-gradient(ellipse at 60% 40%, #fde68a 0%, #f97316 30%, #b45309 60%, #1c1412 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Anemone Close-Up</span><span class="item-loc">Fiji</span></div>
+    </div>
+    <div class="gallery-item" data-category="abstract" data-title="Coral Texture" data-location="Red Sea" data-cld-id="abstract/coral-texture">
+      <div class="item-img" style="--g: radial-gradient(ellipse at 40% 60%, #fca5a5 0%, #e11d48 30%, #9f1239 60%, #1c0a10 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Coral Texture</span><span class="item-loc">Red Sea</span></div>
+    </div>
+    <div class="gallery-item" data-category="abstract" data-title="Bioluminescence" data-location="Maldives" data-cld-id="abstract/bioluminescence">
+      <div class="item-img" style="--g: radial-gradient(ellipse at 50% 50%, #a5f3fc 0%, #0891b2 20%, #164e63 50%, #020617 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Bioluminescence</span><span class="item-loc">Maldives</span></div>
+    </div>
+    <div class="gallery-item" data-category="abstract" data-title="Sea Glass" data-location="Hawaii" data-cld-id="abstract/sea-glass">
+      <div class="item-img" style="--g: linear-gradient(125deg, #ecfdf5 0%, #6ee7b7 30%, #059669 60%, #064e3b 100%)"></div>
+      <div class="item-overlay"><span class="item-title">Sea Glass</span><span class="item-loc">Hawaii</span></div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <div class="lb-inner">
+      <div class="lb-image" id="lbImage"></div>
+      <div class="lb-info">
+        <h2 class="lb-title" id="lbTitle"></h2>
+        <p class="lb-loc" id="lbLoc"></p>
+      </div>
+    </div>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+  </div>
+
+  <!-- About / Contact -->
+  <section class="info-section" id="about">
+    <div class="info-inner">
+      <div class="info-block">
+        <h2>About</h2>
+        <p>Scubagirl is Andrea Ong, an underwater photography enthusiast. She is a PADI Master Scuba Diving Instructor and has been shooting with her Canon 5D MK series camera for the past 15 years.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 scubagirl. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
